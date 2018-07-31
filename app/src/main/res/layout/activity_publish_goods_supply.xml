@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/table_layout_row_margin"
+            android:layout_marginTop="@dimen/table_layout_row_margin"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_start_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_start_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_start_hint"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_end_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_end_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_end_hint"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_distance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_distance_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_distance_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/table_layout_row_margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_goods_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_goods_name_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_weight="4"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_goods_name_hint"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <Button
+                    android:id="@+id/activity_publish_goods_supply_goods_name_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:text="@string/text_select"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/button_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_weight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_weight_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_volume"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_vol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_volume_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/table_layout_row_margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_car_length"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_length"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_weight="4"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_hint_car_length"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <Button
+                    android:id="@+id/activity_publish_goods_supply_length_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:text="@string/text_select"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/button_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_car_models"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_model"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_hint_models"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/table_layout_row_margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_contact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_contact_hint"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_mobile_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_mobile_number_hint"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/row_default_divide_height"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="@dimen/edit_default_height">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/text_view_default_text_padding_left"
+                    android:text="@string/text_phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+
+                <EditText
+                    android:id="@+id/activity_publish_goods_supply_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/edit_default_margin_left"
+                    android:layout_marginRight="@dimen/edit_default_margin_right"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_phone_number_hint"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/edit_default_padding_left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_view_default_text_size"/>
+            </TableRow>
+
+            <Button
+                android:id="@+id/activity_publish_goods_supply_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_default_height"
+                android:layout_margin="10dp"
+                android:background="@color/orange"
+                android:text="@string/publish_goods_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_default_text_size"
+                android:textStyle="bold"/>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

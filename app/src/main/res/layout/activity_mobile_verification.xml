@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/activity_mobile_verification_mobile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:hint="@string/mobile_verification_edit_hint"
+        android:inputType="numberSigned"
+        android:paddingLeft="@dimen/login_enter_left_padding"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/activity_mobile_verification_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height"
+        android:layout_margin="10dp"
+        android:background="@color/orange"
+        android:text="@string/next_button"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_default_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>

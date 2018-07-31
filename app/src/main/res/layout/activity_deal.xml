@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/activity_deal_start_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:hint="@string/detailed_start_edit_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="@dimen/edit_default_padding_left"/>
+
+    <EditText
+        android:id="@+id/activity_deal_end_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="@string/detailed_end_edit_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="@dimen/edit_default_padding_left"/>
+
+    <EditText
+        android:id="@+id/activity_deal_fee_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:hint="@string/fee_edit_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/edit_default_padding_left"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/activity_deal_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange"
+        android:text="@string/confirm_deal_button"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_default_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>

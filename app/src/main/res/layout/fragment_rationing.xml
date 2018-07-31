@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <EditText
+        android:id="@+id/fragment_rationing_start_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:background="@drawable/edit_default_background"
+        android:hint="@string/edit_start_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/fragment_rationing_end_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_default_height"
+        android:background="@drawable/edit_default_background"
+        android:hint="@string/edit_end_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/fragment_rationing_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange"
+        android:text="@string/fragment_rationing_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_default_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>

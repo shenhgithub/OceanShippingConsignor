@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mine_function_title">
+        <item>@string/title_identity_authentication</item>
+        <item>@string/title_my_wallet</item>
+        <item>@string/title_feedback</item>
+        <item>@string/title_about</item>
+        <item>@string/title_customer_service</item>
+    </string-array>
+
+    <array name="mine_function_image">
+        <item>@mipmap/authentication_large_icon</item>
+        <item>@mipmap/wallet_large_icon</item>
+        <item>@mipmap/feedback_large_icon</item>
+        <item>@mipmap/about_large_icon</item>
+        <item>@mipmap/customer_service_large_icon</item>
+    </array>
+
+    <string-array name="explore_function_title">
+        <item>@string/title_order_form</item>
+        <item>@string/title_mobile_verification_launch</item>
+    </string-array>
+
+    <array name="explore_function_image">
+        <item>@mipmap/order_form_large_icon</item>
+        <item>@mipmap/mobile_auth_icon</item>
+    </array>
+
+    <string-array name="grid_item_function_name_list">
+        <item>@string/title_publish_goods_supply</item>
+        <item>@string/title_goods_supply_manager</item>
+    </string-array>
+
+    <array name="grid_item_function_image_list">
+        <item>@mipmap/publish_goods_icon</item>
+        <item>@mipmap/goods_manager_icon</item>
+    </array>
+
+    <string-array name="grid_item_function_code_list">
+        <item>MF0001</item>
+        <item>MF0002</item>
+    </string-array>
+
+    <string-array name="mobile_verification_item_tag_list">
+        <item>@string/text_name</item>
+        <item>@string/text_id_card</item>
+        <item>@string/text_license_plate_number</item>
+        <item>@string/text_car_models</item>
+        <item>@string/text_car_length</item>
+        <item>@string/text_load</item>
+    </string-array>
+
+    <array name="bottom_navigation_default_image_list">
+        <item>@mipmap/main_navigation_small_icon</item>
+        <item>@mipmap/message_navigation_small_icon</item>
+        <item>@mipmap/explore_navigation_small_icon</item>
+        <item>@mipmap/mine_navigation_small_icon</item>
+    </array>
+
+    <array name="bottom_navigation_selected_image_list">
+        <item>@mipmap/main_navigation_selected_small_icon</item>
+        <item>@mipmap/message_navigation__selected_small_icon</item>
+        <item>@mipmap/explore_navigation_selected_small_icon</item>
+        <item>@mipmap/mine_navigation_selected_small_icon</item>
+    </array>
+
+    <array name="goods_name_select_list">
+        <item>普货</item>
+        <item>重货</item>
+        <item>泡货</item>
+        <item>煤炭</item>
+        <item>矿石</item>
+        <item>粮食</item>
+        <item>整车</item>
+        <item>零担</item>
+        <item>树苗</item>
+        <item>配件</item>
+        <item>食品酒</item>
+        <item>水果</item>
+        <item>蔬菜</item>
+        <item>调味品</item>
+        <item>设备</item>
+        <item>钢材</item>
+        <item>钢管</item>
+        <item>托盘</item>
+        <item>塑料管</item>
+        <item>家具</item>
+        <item>防盗门</item>
+        <item>木箱</item>
+        <item>化工</item>
+        <item>石材</item>
+        <item>饲料</item>
+        <item>肥料</item>
+        <item>塑料橡胶制品</item>
+        <item>地砖</item>
+        <item>药品</item>
+        <item>液体</item>
+    </array>
+
+    <!-- 车长选择列表 -->
+    <string-array name="vehicle_length_select_list">
+        <item>4.2</item>
+        <item>4.5</item>
+        <item>5.2</item>
+        <item>6.2</item>
+        <item>6.8</item>
+        <item>7.2</item>
+        <item>8.2</item>
+        <item>9.6</item>
+        <item>11.7</item>
+        <item>12.5</item>
+        <item>13</item>
+        <item>13.5</item>
+        <item>14</item>
+        <item>17</item>
+        <item>17.5</item>
+        <item>18</item>
+        <item>22</item>
+    </string-array>
+
+</resources>

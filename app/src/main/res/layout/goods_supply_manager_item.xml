@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/list_view_item_select_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/goods_supply_manager_route_start_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/start_icon"
+            android:text="起点"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_default_text_size"/>
+
+        <TextView
+            android:id="@+id/goods_supply_manager_route_end_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_supply_manager_route_start_textView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/end_icon"
+            android:text="终点"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_default_text_size"/>
+
+        <TextView
+            android:id="@+id/goods_supply_manager_attribute_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_supply_manager_route_end_textView"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="相关属性"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_default_text_size_small"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/goods_supply_manager_rationing_button"
+                android:layout_width="@dimen/circle_button_diameter"
+                android:layout_height="@dimen/circle_button_diameter"
+                android:background="@drawable/bg_special_disease_circle"
+                android:text="发起\n交易"/>
+
+            <TextView
+                android:id="@+id/goods_supply_manager_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/time_icon"
+                android:text="发布时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_view_default_text_size_small"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_default_divide_height"
+        android:background="?android:attr/colorBackground"/>
+
+    <LinearLayout
+        android:id="@+id/goods_supply_manager_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/goods_supply_manager_edit_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="编辑"
+            android:textSize="@dimen/text_view_default_text_size_small"/>
+
+        <TextView
+            android:id="@+id/goods_supply_manager_delete_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="撤销"
+            android:textSize="@dimen/text_view_default_text_size_small"/>
+
+    </LinearLayout>
+
+</LinearLayout>
